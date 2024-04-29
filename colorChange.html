@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+    <style>
+        #start,#stop{
+        position: relative;
+        left: 400px;
+        top: 240px;
+        width: 100px;
+        height: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 21px;
+        background-color: rgb(134, 197, 144);
+        border: solid;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgb(75, 73, 73) ;
+        }
+    </style>
+</head>
+<body style="position:absolute">
+    
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // generate color code randomly
+    const randomColor = function(){
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+        for(let i = 0 ; i< 6 ; i++){
+           color+=hex[ Math.round(Math.random()*16)]
+        }
+        return color;
+    };
+
+    // intialize interval for stop the process
+    let intervalId;
+
+    //start variable contains a function which change the color in every 1000 ms and also contain random colors;
+
+    const start = function(){
+         function changebackground(){
+            // for every random background color 
+            document.body.style.backgroundColor =randomColor();
+         }
+         
+         if(!intervalId){
+            intervalId = setInterval(changebackground,1000);
+         }
+    }
+    // stop is also a variable for  stop the change color effect;
+    const stop = function(){
+        clearInterval(intervalId);
+       intervalId = null;
+    }
+   // on click the start button it will start changing color randomly
+    document.getElementById('start').addEventListener('click',start);
+ // on clicking the stop button it will stop changing color 
+    document.getElementById('stop').addEventListener('click',stop);
+</script>
+</html>
