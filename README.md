@@ -1,4 +1,4 @@
-# 02randomColor
+# basic js 
 01 : color changing simple project 
 using eventListener , setTimeout
  , clearTimeout functions in js
