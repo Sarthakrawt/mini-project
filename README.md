@@ -25,3 +25,9 @@ which calculate your body mass index
 Where you just need to press the button
 and the container change its color
 
+# 07 : Random Color
+Where you in page you have given two button 
+One is start
+Second one is stop
+when you press start it will change color randomly 
+when you press stop it wil stop the process
