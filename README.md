@@ -1,13 +1,17 @@
 # basic js 
 # 01 : color changing simple project 
-using eventListener , setTimeout
- , clearTimeout functions in js
+ In this project you just need to press the 
+ color box and it will change the whole background 
+ color
 # 02 : digital clock 
-using Date object 
- # 03 : magic it show a key you press 
-from your keybord and give you 
-three things key, keycode, code
-using basic Dom and eventListener
+ In this project you can see the exact time on the 
+ screen 
+ 
+ # 03 : magic project
+ it show a key you press 
+ from your keybord and give you 
+ three things key, keycode, code
+ using basic Dom and eventListener
 
 # 04 : guess the Number 
 In which you just to guess a random
